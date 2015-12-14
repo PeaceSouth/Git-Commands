@@ -1,33 +1,35 @@
-cd /d  ½øÈëÄ¿Â¼
+cd /d  è¿›å…¥ç›®å½•
 
-git init ½«µ±Ç°Ä¿Â¼³õÊ¼»¯ÎªGIT´úÂë²Ö¿â
+git init å°†å½“å‰ç›®å½•åˆå§‹åŒ–ä¸ºGITä»£ç ä»“åº“
 
-git status ²é¿´µ±Ç°²Ö¿âÖĞ×´Ì¬£¬ÓĞÎŞĞÂÎÄ¼ş£¬ÒÑ¾­ÊÇ·ñÓĞÎÄ¼ş·¢ÉúÁËĞŞ¸Ä
+git status æŸ¥çœ‹å½“å‰ä»“åº“ä¸­çŠ¶æ€ï¼Œæœ‰æ— æ–°æ–‡ä»¶ï¼Œå·²ç»æ˜¯å¦æœ‰æ–‡ä»¶å‘ç”Ÿäº†ä¿®æ”¹
 
-git add . ½«µ±Ç°²Ö¿âÖĞĞÂµÄÎÄ¼ş¼ÓÈë×·×Ù(Ôİ´æ)
+git add . å°†å½“å‰ä»“åº“ä¸­æ–°çš„æ–‡ä»¶åŠ å…¥è¿½è¸ª(æš‚å­˜)
 
-git commit -m "XXXXX" ½«¼ÓÈëÔİ´æÇøµÄÎÄ¼şÌá½»£¨µ½±¾µØ£¬¼Èµ±Ç°Ä¿Â¼ÖĞ£©,²¢ÓÃ-m²ÎÊı¼ÓÈëÌá½»ĞÅÏ¢
+git commit -m "XXXXX" å°†åŠ å…¥æš‚å­˜åŒºçš„æ–‡ä»¶æäº¤ï¼ˆåˆ°æœ¬åœ°ï¼Œæ—¢å½“å‰ç›®å½•ä¸­ï¼‰,å¹¶ç”¨-må‚æ•°åŠ å…¥æäº¤ä¿¡æ¯
 
-git log ²é¿´ÀúÊ·Ìá½»µÄÄÚÈİ
+git log æŸ¥çœ‹å†å²æäº¤çš„å†…å®¹
 
-git reset --hard commitID ½«»Øµ½Ö¸¶¨µÄcommit£¬¼ÈÉ¾³ı´Ë´ÎcommitÖ®ºóµÄÌá½»ºÍÎÄ¼şĞŞ¸Ä
+git reset --hard commitID å°†å›åˆ°æŒ‡å®šçš„commitï¼Œæ—¢åˆ é™¤æ­¤æ¬¡commitä¹‹åçš„æäº¤å’Œæ–‡ä»¶ä¿®æ”¹
 
-git reset commitID ½«»Øµ½Ö¸¶¨µÄcommit£¬½öÉ¾³ı´Ë´ÎcommitÖ®ºóµÄÌá½»£¬µ«ÎÄ¼şĞŞ¸Ä±£Áô
+git reset commitID å°†å›åˆ°æŒ‡å®šçš„commitï¼Œä»…åˆ é™¤æ­¤æ¬¡commitä¹‹åçš„æäº¤ï¼Œä½†æ–‡ä»¶ä¿®æ”¹ä¿ç•™
 
-git remote add origin git@github.com:PeaceSouth/FirstGitDemo.git ½«Ô¶³Ì¼ÓÈëÎªorigin²Ö¿â
+git remote add origin git@github.com:PeaceSouth/FirstGitDemo.git å°†è¿œç¨‹åŠ å…¥ä¸ºoriginä»“åº“
 
-git push -u origin master ½«commitÖ®ºóµÄ´úÂëpushµ½Ô¶³Ì²Ö¿â£¬-uÊÇ½¨Á¢±¾µØµ±Ç°µÄ²Ö¿âºÍÔ¶³ÌµÄ²Ö¿âµÄÓ³Éä
+git push -u origin master å°†commitä¹‹åçš„ä»£ç pushåˆ°è¿œç¨‹ä»“åº“ï¼Œ-uæ˜¯å»ºç«‹æœ¬åœ°å½“å‰çš„ä»“åº“å’Œè¿œç¨‹çš„ä»“åº“çš„æ˜ å°„
 
-git clone git@github.com:PeaceSouth/FirstGitDemo.git(Ô¶³Ì²Ö¿âµØÖ·) GitLab2(½«´´½¨µÄĞÂµÄ²Ö¿âµØÖ·) Ê¹ÓÃSSHĞ­Òé½«Ô¶³ÌµÄ²Ö¿âÀ­µ½ºóÃæµÄĞÂ²Ö¿âµØÖ·
+git push --force å»ºç«‹äº†è¿œç¨‹å’Œæœ¬åœ°ä»“åº“ä¹‹é—´çš„æ˜ å°„åï¼Œå¯ä»¥åªç”¨pushå‘½ä»¤æäº¤ï¼Œè¿˜å¯ä»¥åŠ forceå‚æ•°æŒ‡ç¤ºç”¨æœ¬åœ°ä»“åº“å¼ºåˆ¶è¦†ç›–è¿œç¨‹çš„
 
-git clone https://github.com/PeaceSouth/FirstGitDemo.git GitLab3 Ê¹ÓÃHttpsĞ­Òé
+git clone git@github.com:PeaceSouth/FirstGitDemo.git(è¿œç¨‹ä»“åº“åœ°å€) GitLab2(å°†åˆ›å»ºçš„æ–°çš„ä»“åº“åœ°å€) ä½¿ç”¨SSHåè®®å°†è¿œç¨‹çš„ä»“åº“æ‹‰åˆ°åé¢çš„æ–°ä»“åº“åœ°å€
 
-git branch dev »ùÓÚµ±Ç°·ÖÖ§£¨¿ÉÄÜÊÇ·ÖÖ§µÄ·ÖÖ§£©ÉÏ´´½¨Ò»¸öĞÂµÄ·ÖÖ§
+git clone https://github.com/PeaceSouth/FirstGitDemo.git GitLab3 ä½¿ç”¨Httpsåè®®
 
-git branch ²é¿´µ±Ç°ÏîÄ¿µÄËùÓĞ·ÖÖ§
+git branch dev åŸºäºå½“å‰åˆ†æ”¯ï¼ˆå¯èƒ½æ˜¯åˆ†æ”¯çš„åˆ†æ”¯ï¼‰ä¸Šåˆ›å»ºä¸€ä¸ªæ–°çš„åˆ†æ”¯
 
-git checkout deve ÇĞ»»µ½dev·ÖÖ§ÉÏ
+git branch æŸ¥çœ‹å½“å‰é¡¹ç›®çš„æ‰€æœ‰åˆ†æ”¯
 
-git commit . -m "command" ½«Ã»trackµ½µÄĞŞ¸ÄÒ»´ÎÌá½»£¬²»ĞèÒªÊ¹ÓÃgit add .ÃüÁîÒ²¿ÉÒÔÌá½»£¨µ«ÊÇĞÂ¼ÓµÄÎÄ¼ş±ØĞë»¹ÒªÏÈÖ´ĞĞaddÃüÁî£©
+git checkout deve åˆ‡æ¢åˆ°devåˆ†æ”¯ä¸Š
 
-git merge dev ¼ÙÉèµ±Ç°ËùÔÚ·ÖÖ§ÊÇmater£¬´ËÃüÁîÊÇ½«ÖÆ¶¨µÄ·ÖÖ§£¨dev£©mergeµ½µ±Ç°µÄ·ÖÖ§ÉÏ£¨master£©
+git commit . -m "command" å°†æ²¡trackåˆ°çš„ä¿®æ”¹ä¸€æ¬¡æäº¤ï¼Œä¸éœ€è¦ä½¿ç”¨git add .å‘½ä»¤ä¹Ÿå¯ä»¥æäº¤ï¼ˆä½†æ˜¯æ–°åŠ çš„æ–‡ä»¶å¿…é¡»è¿˜è¦å…ˆæ‰§è¡Œaddå‘½ä»¤ï¼‰
+
+git merge dev å‡è®¾å½“å‰æ‰€åœ¨åˆ†æ”¯æ˜¯materï¼Œæ­¤å‘½ä»¤æ˜¯å°†åˆ¶å®šçš„åˆ†æ”¯ï¼ˆdevï¼‰mergeåˆ°å½“å‰çš„åˆ†æ”¯ä¸Šï¼ˆmasterï¼‰
