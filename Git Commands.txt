@@ -2,11 +2,37 @@ cd /d  进入目录
 
 git init 将当前目录初始化为GIT代码仓库
 
+git clone git@github.com:PeaceSouth/FirstGitDemo.git(远程仓库地址) GitLab2(将创建的新的仓库地址) 使用SSH协议将远程的仓库拉到后面的新仓库地址
+
+git clone https://github.com/PeaceSouth/FirstGitDemo.git GitLab3 使用Https协议
+
+git remote -v 查看远程分支
+
+git remote add origin git@github.com:PeaceSouth/FirstGitDemo.git 将远程加入为origin仓库
+
+git remote set-url origin http://10.199.192.11/business-platform/sharingBRNApp.git 修改远程仓库地址
+
+git remote rename branch1 branch2 修改本地映射的远程分支名branch1为branch2
+
+git remote rm origin 删除远程分支
+
+git branch 查看当前项目的所有分支
+
+git branch dev 基于当前分支（可能是分支的分支）上创建一个新的分支
+
+git checkout dev 切换到dev分支上
+
 git status 查看当前仓库中状态，有无新文件，已经是否有文件发生了修改
 
 git add . 将当前仓库中新的文件加入追踪(暂存)
 
+git checkout -- .清空工作树中的修改
+
 git commit -m "XXXXX" 将加入暂存区的文件提交（到本地，既当前目录中）,并用-m参数加入提交信息
+
+git commit . -m "command" 将没track到的修改一次提交，不需要使用git add .命令也可以提交（但是新加的文件必须还要先执行add命令）
+
+git merge dev 假设当前所在分支是mater，此命令是将制定的分支（dev）merge到当前的分支上（master）
 
 git log 查看历史提交的内容
 
@@ -14,24 +40,6 @@ git reset --hard commitID 将回到指定的commit，既删除此次commit之后
 
 git reset commitID 将回到指定的commit，仅删除此次commit之后的提交，但文件修改保留
 
-git remote add origin git@github.com:PeaceSouth/FirstGitDemo.git 将远程加入为origin仓库
-
-git remote rm origin 删除远程分支
-
 git push -u origin master 将commit之后的代码push到远程仓库，-u是建立本地当前的仓库和远程的仓库的映射
 
 git push --force 建立了远程和本地仓库之间的映射后，可以只用push命令提交，还可以加force参数指示用本地仓库强制覆盖远程的
-
-git clone git@github.com:PeaceSouth/FirstGitDemo.git(远程仓库地址) GitLab2(将创建的新的仓库地址) 使用SSH协议将远程的仓库拉到后面的新仓库地址
-
-git clone https://github.com/PeaceSouth/FirstGitDemo.git GitLab3 使用Https协议
-
-git branch dev 基于当前分支（可能是分支的分支）上创建一个新的分支
-
-git branch 查看当前项目的所有分支
-
-git checkout deve 切换到dev分支上
-
-git commit . -m "command" 将没track到的修改一次提交，不需要使用git add .命令也可以提交（但是新加的文件必须还要先执行add命令）
-
-git merge dev 假设当前所在分支是mater，此命令是将制定的分支（dev）merge到当前的分支上（master）
