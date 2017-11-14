@@ -43,3 +43,9 @@ git reset commitID 将回到指定的commit，仅删除此次commit之后的提�
 git push -u origin master 将commit之后的代码push到远程仓库，-u是建立本地当前的仓库和远程的仓库的映射
 
 git push --force 建立了远程和本地仓库之间的映射后，可以只用push命令提交，还可以加force参数指示用本地仓库强制覆盖远程的
+
+git cherry-pick commitId 在当前分支上合并其他分支的某个commit
+
+git cherry-pick commitIdA^..commitIdB 在当前分支上合并其他分支的几个连续commit[commitIdA, commitIdB]
+
+git cherry-pick commitIdA..commitIdB 在当前分支上合并其他分支的几个连续commit（commitIdA, commitIdB]
